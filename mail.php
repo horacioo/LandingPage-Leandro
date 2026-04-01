@@ -1,5 +1,8 @@
 <?php
 
+///$emailDestino = "leandro.lopes@nextgleads.com";
+$emailDestino = "horacio@planet1.com.br";
+
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
     echo "Requisição inválida";
     exit;
@@ -22,7 +25,7 @@ if (empty($nome) || empty($email) || empty($whatsapp)) {
 }
 
 // Email destino
-$para = "horacio@planet1.com.br";
+$para = "leandro.lopes@nextgleads.com";
 $assunto = "Novo lead - NextGen";
 
 // Monta mensagem
